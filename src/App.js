@@ -16,7 +16,7 @@ function App() {
       </div>
     </div>
       <div className="greeting">
-        <ItemListContainer greeting={'¡Bienvenidos 👋'}/>
+        <ItemListContainer greeting={'¡Bienvenidos! 👋'}/>
       </div>
     </>
 
