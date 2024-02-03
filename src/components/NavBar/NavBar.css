@@ -1,0 +1,16 @@
+.NavBar {
+    text-decoration: none;
+
+}
+
+.NavBar .Categories {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: inherit;
+  }

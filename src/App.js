@@ -1,27 +1,25 @@
 import './App.css';
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/itemListContainer/itemListContainer';
-import logo from "./logo.svg"
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+
 
 function App() {
   return (
-    <>
-    <div className="contenedor">
-      <div className="logoTicketera">
-        <img src={logo} alt="logo"></img>
-        <h3>ES HORA</h3>
-      </div>
-      <div className="App">
-        <NavBar />
-      </div>
+    <div className="App">
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+          <Route path='/' element ={<ItemListContainer />} />
+          <Route path='/category/:categoryId' element={ <ItemListContainer />}/>
+          <Route path='/item/:itemId' element={ <ItemDetailContainer />}/>
+          <Route path='*' element={<h1>PAGINA NO ENCONTRADA</h1>} />
+        </Routes>
+      </BrowserRouter>
     </div>
-      <div className="greeting">
-        <ItemListContainer greeting={'¡Bienvenidos! 👋'}/>
-      </div>
-    </>
-
-    
   );
 }
 
-export default App;
+export default App
+ 

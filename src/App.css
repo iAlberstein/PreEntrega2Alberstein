@@ -1,3 +1,8 @@
+
+.App {
+  background-color: rgb(208, 238, 252);
+}
+
 .contenedor {
   display: flex;
   flex-direction: row;
@@ -16,6 +21,7 @@ nav {
   flex-direction: row;
 
 }
+
 
 .logoTicketera {
   margin-left: 20px;
@@ -39,6 +45,7 @@ button {
 button:hover{
   background-color: rgb(44, 105, 44);
 }
+
 
 .App-logo {
   height: 40vmin;

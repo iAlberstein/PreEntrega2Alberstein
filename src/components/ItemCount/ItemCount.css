@@ -1,0 +1,28 @@
+.Counter {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.Counter .Controls {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Counter .Controls .Number {
+    background-color: aliceblue;
+    padding: 5px 20px 5px 20px;
+}
+
+
+.Counter .Controls .Button{
+    width: 40px;
+}
+
+.Counter .agregarAlCarrito{
+    width: 150px;
+
+}
